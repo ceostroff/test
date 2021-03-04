@@ -18,11 +18,11 @@ def get_availability():
     }
     params = {"vaccineinfo": ""}
     res = requests.get(
-        "https://www.cvs.com/immunizations/covid-19-vaccine.vaccine-status.IA.json",
+        "https://www.cvs.com/immunizations/covid-19-vaccine.vaccine-status.FL.json",
         headers=headers,
         params=params,
     )
-    return res.json()["responsePayloadData"]["data"]["IA"]
+    return res.json()["responsePayloadData"]["data"]["FL"]
 
 
 def get_and_check():
