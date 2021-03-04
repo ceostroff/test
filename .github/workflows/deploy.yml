@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-      - cron: "*/30 * * * *"
+      - cron: "*/5 * * * *"
 jobs:
   fetch-data:
     runs-on: ubuntu-latest
